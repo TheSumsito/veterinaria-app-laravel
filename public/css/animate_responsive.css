@@ -1,0 +1,350 @@
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* ------ INDEX ------ */
+    /* -- CONTAINER VISION -- */
+    .container-servicios #titulo,
+    .container-servicios #ico-domicilio,
+    .container-servicios #ico-cirugia,
+    .container-servicios #ico-hospital,
+    .container-servicios #ico-imagenologia {
+        -webkit-animation-duration: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-experiencia #titulo,
+    .container-experiencia #texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-marca #titulo,
+    .container-marca #texto,
+    .container-marca .iconos #ico-biljac,
+    .container-marca .iconos #ico-eukanuba,
+    .container-marca .iconos #ico-hills,
+    .container-marca .iconos #ico-nutranuggets,
+    .container-marca .iconos #ico-nutragold,
+    .container-marca .iconos #ico-diamond {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+    /* ---------------------- */
+
+
+    /* ------- NOSOTROS --------- */
+    /* -- CONTAINER VISION -- */
+    .container-vision #titulo,
+    .container-vision #texto,
+    .container-vision #imagen,
+    .container-vision #logo,
+    .container-vision #aguja,
+    .container-vision #barra-gris {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* -------- SERVICIOS ---------- */
+    /* -- SERVICES -- */
+    .container-services .cirugia .imagen,
+    .container-services .imagenologia .imagen,
+    .container-services .hospital .imagen,
+    .container-services .cirugia .texto,
+    .container-services .imagenologia .texto,
+    .container-services .hospital .texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-services .dermatologia .imagen,
+    .container-services .farmacia .imagen,
+    .container-services .peluqueria .imagen,
+    .container-services .dermatologia .texto,
+    .container-services .farmacia .texto,
+    .container-services .peluqueria .texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-services .alimentos #imagen,
+    .container-services .accesorios #imagen,
+    .container-services .domicilio #imagen,
+    .container-services .alimentos #texto,
+    .container-services .accesorios #texto,
+    .container-services .domicilio #texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* ------------- PLANES ------------- */
+    .container-planes .imagen {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+
+    /* ------------ CONTACTO ------------- */
+    .container-contacto .formulario .nombre,
+    .container-contacto .formulario .apellido,
+    .container-contacto .formulario .mail,
+    .container-contacto .formulario .telefono,
+    .container-contacto .formulario .asunto,
+    .container-contacto .formulario .mensaje,
+    .container-contacto .formulario .boton {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .detalle-contacto .texto,
+    .detalle-contacto .contacto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-social .titulo,
+    .container-social .ico-facebook,
+    .container-social .ico-instagram,
+    .container-social .ico-whatsapp {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* ------ INDEX ------ */
+    /* -- CONTAINER VISION -- */
+    .container-servicios #titulo,
+    .container-servicios #ico-domicilio,
+    .container-servicios #ico-cirugia,
+    .container-servicios #ico-hospital,
+    .container-servicios #ico-imagenologia {
+        -webkit-animation-duration: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-experiencia #titulo,
+    .container-experiencia #texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-marca #titulo,
+    .container-marca #texto,
+    .container-marca .iconos #ico-biljac,
+    .container-marca .iconos #ico-eukanuba,
+    .container-marca .iconos #ico-hills,
+    .container-marca .iconos #ico-nutranuggets,
+    .container-marca .iconos #ico-nutragold,
+    .container-marca .iconos #ico-diamond {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+    /* ---------------------- */
+
+
+    /* ------- NOSOTROS --------- */
+    /* -- CONTAINER VISION -- */
+    .container-vision #titulo,
+    .container-vision #texto,
+    .container-vision #imagen,
+    .container-vision #logo,
+    .container-vision #aguja,
+    .container-vision #barra-gris {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* -------- SERVICIOS ---------- */
+    /* -- SERVICES -- */
+    .container-services .cirugia .imagen,
+    .container-services .imagenologia .imagen,
+    .container-services .hospital .imagen,
+    .container-services .cirugia .texto,
+    .container-services .imagenologia .texto,
+    .container-services .hospital .texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-services .dermatologia .imagen,
+    .container-services .farmacia .imagen,
+    .container-services .peluqueria .imagen,
+    .container-services .dermatologia .texto,
+    .container-services .farmacia .texto,
+    .container-services .peluqueria .texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-services .alimentos #imagen,
+    .container-services .accesorios #imagen,
+    .container-services .domicilio #imagen,
+    .container-services .alimentos #texto,
+    .container-services .accesorios #texto,
+    .container-services .domicilio #texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* ------------- PLANES ------------- */
+    .container-planes .imagen {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    
+    /* ------------ CONTACTO ------------- */
+    .container-contacto .formulario .nombre,
+    .container-contacto .formulario .apellido,
+    .container-contacto .formulario .mail,
+    .container-contacto .formulario .telefono,
+    .container-contacto .formulario .asunto,
+    .container-contacto .formulario .mensaje,
+    .container-contacto .formulario .boton {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .detalle-contacto .texto,
+    .detalle-contacto .contacto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-social .titulo,
+    .container-social .ico-facebook,
+    .container-social .ico-instagram,
+    .container-social .ico-whatsapp {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+        /* ------ INDEX ------ */
+    /* -- CONTAINER VISION -- */
+    .container-servicios #titulo,
+    .container-servicios #ico-domicilio,
+    .container-servicios #ico-cirugia,
+    .container-servicios #ico-hospital,
+    .container-servicios #ico-imagenologia {
+        -webkit-animation-duration: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-experiencia #titulo,
+    .container-experiencia #texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-marca #titulo,
+    .container-marca #texto,
+    .container-marca .iconos #ico-biljac,
+    .container-marca .iconos #ico-eukanuba,
+    .container-marca .iconos #ico-hills,
+    .container-marca .iconos #ico-nutranuggets,
+    .container-marca .iconos #ico-nutragold,
+    .container-marca .iconos #ico-diamond {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+    /* ---------------------- */
+
+
+    /* ------- NOSOTROS --------- */
+    /* -- CONTAINER VISION -- */
+    .container-vision #titulo,
+    .container-vision #texto,
+    .container-vision #imagen,
+    .container-vision #logo,
+    .container-vision #aguja,
+    .container-vision #barra-gris {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* -------- SERVICIOS ---------- */
+    /* -- SERVICES -- */
+    .container-services .cirugia .imagen,
+    .container-services .imagenologia .imagen,
+    .container-services .hospital .imagen,
+    .container-services .cirugia .texto,
+    .container-services .imagenologia .texto,
+    .container-services .hospital .texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-services .dermatologia .imagen,
+    .container-services .farmacia .imagen,
+    .container-services .peluqueria .imagen,
+    .container-services .dermatologia .texto,
+    .container-services .farmacia .texto,
+    .container-services .peluqueria .texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-services .alimentos #imagen,
+    .container-services .accesorios #imagen,
+    .container-services .domicilio #imagen,
+    .container-services .alimentos #texto,
+    .container-services .accesorios #texto,
+    .container-services .domicilio #texto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* ------------- PLANES ------------- */
+    .container-planes .imagen {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    /* ------------ CONTACTO ------------- */
+    .container-contacto .formulario .nombre,
+    .container-contacto .formulario .apellido,
+    .container-contacto .formulario .mail,
+    .container-contacto .formulario .telefono,
+    .container-contacto .formulario .asunto,
+    .container-contacto .formulario .mensaje,
+    .container-contacto .formulario .boton {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .detalle-contacto .texto,
+    .detalle-contacto .contacto {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+
+    .container-social .titulo,
+    .container-social .ico-facebook,
+    .container-social .ico-instagram,
+    .container-social .ico-whatsapp {
+        -webkit-animation-durations: 0s;
+        animation-duration: 0s;
+    }
+}
+
+
+
+/* ------- RESPONSIVIDAD NOTEBOOK - ESCRITORIO ---------- */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+        /* -- CONTAINER VISION -- */
+        .container-servicios #titulo,
+        .container-servicios #ico-domicilio,
+        .container-servicios #ico-cirugia,
+        .container-servicios #ico-hospital,
+        .container-servicios #ico-imagenologia {
+            -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+}

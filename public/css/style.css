@@ -1,0 +1,1082 @@
+@import 'https://fonts.googleapis.com/css?family=Bitter&display=swap';
+
+:root {
+    --blue: rgb(62, 118, 174);
+    --gray: #b6b6b6;
+    --lightgray: #F0F0F0;
+    --darkgray: rgb(105, 105, 105);
+    --black: #343434;
+    --white: rgb(182, 182, 182);
+}
+
+/* ------------------- VARIABLES GENERALES ------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--lightgray);
+}
+/* ----------------------------------------------------------- */
+
+
+/* ----------- MENU ------------ */
+.container-menu {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: white;
+}
+
+.container-menu .logo {
+    grid-column: 1/3;
+    padding: 10px;
+}
+
+.container-menu .logo img {
+    max-width: 100%;
+}
+
+.container-menu .menu {
+    grid-column: 4/8;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    
+}
+
+.container-menu .menu li {
+    display: inline;
+}
+
+.container-menu .menu li span {
+    margin: 5px;
+}
+
+.container-menu .menu li a {
+    text-decoration: none;
+    font-family: 'Bitter';
+    margin: 5px;
+    color: var(--blue);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container-menu .menu li a:hover {
+    color: var(--darkgray);
+}
+
+.container-menu .menu li .active {
+    color: var(--darkgray);
+}
+
+.container-menu .icono-menu {
+    display: none;
+}
+/* ------------------------------------- */
+
+/* ------------- FOOTER --------------- */
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    background-color: var(--black);
+}
+
+.container-footer .logo {
+    grid-column: 1/4;
+    position: relative;
+    top: 70px;
+    
+}
+
+.container-footer .contacto {
+    grid-column: 4/7;
+    position: relative;
+    top: 40px;
+}
+
+.container-footer .horario {
+    grid-column: 7/10;
+    position: relative;
+    top: 40px;
+}
+
+.container-footer .logo img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+
+.container-footer .contacto .texto,
+.container-footer .horario .texto {
+    position: relative;
+    top: 10px;
+}
+
+
+.container-footer .contacto .titulo h1,
+.container-footer .horario .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-footer .contacto .texto p,
+.container-footer .horario .texto p {
+    color: var(--white);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+.container-footer .contacto .texto p a,
+.container-footer .horario .texto p a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.container-footer .contacto .texto p a:hover,
+.container-footer .horario .texto p a:hover {
+    text-decoration: none;
+    color: var(--blue);
+}
+/* ------------------------------------ */
+
+
+
+
+/* -------------- INDEX ---------------- */
+
+/* ------------- CAROUSEL -------------- */
+.container-carousel {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container-carousel .slide01 {
+    grid-column: 1/-1;
+}
+
+.container-carousel .slide02 {
+    grid-column: 1/-1;
+}
+
+.container-carousel .slide03 {
+    grid-column: 1/-1;
+}
+
+.container-carousel .slide01 .texto,
+.container-carousel .slide02 .texto,
+.container-carousel .slide03 .texto {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.container-carousel .slide01 .imagen img,
+.container-carousel .slide02 .imagen img,
+.container-carousel .slide03 .imagen img {
+    max-width: 100%;
+}
+
+.container-carousel .slide01 .texto h1,
+.container-carousel .slide02 .texto h1,
+.container-carousel .slide03 .texto h1 {
+    font-size: 60px;
+    font-family: 'Bitter';
+    color: var(--blue);
+} 
+
+.container-carousel .slide01 .texto p,
+.container-carousel .slide02 .texto p,
+.container-carousel .slide03 .texto p {
+    font-size: 30px;
+    font-family: 'Bitter';
+    color: var(--darkgray);
+} 
+
+.container-carousel .slide01 .texto hr,
+.container-carousel .slide02 .texto hr,
+.container-carousel .slide03 .texto hr {
+    border: 1px solid var(--blue);
+} 
+
+/* ------------------------------------------ */
+
+/* --------------- SERVICIOS ---------------- */
+.container-servicios {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.container-servicios .titulo {
+    grid-column: 2/6;
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+
+.container-servicios .ico-domicilio {
+    grid-column: 2/3;
+    position: relative;
+    right: 60px;
+}
+
+.container-servicios .ico-cirugia {
+    grid-column: 3/4;
+    position: relative;
+    right: 20px;
+}
+
+.container-servicios .ico-hospital {
+    grid-column: 4/5;
+    position: relative;
+    left: 30px;
+}
+
+.container-servicios .ico-imagenologia {
+    grid-column: 5/6;
+    position: relative;
+    left: 60px;
+}
+
+.container-servicios .ico-domicilio .imagen img,
+.container-servicios .ico-cirugia .imagen img,
+.container-servicios .ico-hospital .imagen img,
+.container-servicios .ico-imagenologia .imagen img {
+    display: block;
+    margin: auto;
+}
+
+.container-servicios .ico-domicilio .texto,
+.container-servicios .ico-cirugia .texto,
+.container-servicios .ico-hospital .texto,
+.container-servicios .ico-imagenologia .texto {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-servicios .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-servicios .ico-domicilio .texto h1,
+.container-servicios .ico-cirugia .texto h1,
+.container-servicios .ico-hospital .texto h1,
+.container-servicios .ico-imagenologia .texto h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 35px;
+}
+
+.container-servicios .ico-domicilio .texto p,
+.container-servicios .ico-cirugia .texto p,
+.container-servicios .ico-hospital .texto p,
+.container-servicios .ico-imagenologia .texto p {
+    color: var(--blue);
+    font-family: 'Bitter';
+    color: var(--darkgray);
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+/* --------------------------------------------------- */
+
+/* -------------------- EXPERIENCIA ------------------ */
+.container-experiencia {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    background-color: white;
+}
+
+.container-experiencia .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-experiencia .texto {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-experiencia .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-experiencia .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 23px;
+}
+/* --------------------------------------------------- */
+
+
+
+/* ------------------ MARCAS ------------------------- */
+.container-marca {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 80px);
+}
+
+.container-marca .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-marca .texto {
+    grid-column: 2/7;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-marca .iconos {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.container-marca .iconos .ico-biljac {
+    grid-column: 3/4;
+}
+.container-marca .iconos .ico-eukanuba {
+    grid-column: 4/5;
+}
+.container-marca .iconos .ico-hills {
+    grid-column: 5/6;
+}
+.container-marca .iconos .ico-nutranuggets {
+    grid-column: 3/4;
+}
+.container-marca .iconos .ico-nutragold {
+    grid-column: 4/5;
+    position: relative;
+    top: 30px;
+}
+.container-marca .iconos .ico-diamond {
+    grid-column: 5/6;
+}   
+
+.container-marca .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-marca .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 23px;
+}
+
+.container-marca .iconos .ico-biljac img,
+.container-marca .iconos .ico-eukanuba img,
+.container-marca .iconos .ico-hills img,
+.container-marca .iconos .ico-nutranuggets img,
+.container-marca .iconos .ico-nutragold img,
+.container-marca .iconos .ico-diamond img {
+    max-width: 100%;
+}
+
+.container-marca .iconos .ico-biljac img:hover,
+.container-marca .iconos .ico-eukanuba img:hover,
+.container-marca .iconos .ico-hills img:hover,
+.container-marca .iconos .ico-nutranuggets img:hover,
+.container-marca .iconos .ico-nutragold img:hover,
+.container-marca .iconos .ico-diamond img:hover {
+    opacity: .5;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+/* --------------------------------------------------- */
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------- VISTA: NOSOTROS ------------------------ */
+
+/* ------------------ NOSOTROS ----------------- */
+.container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.container-nosotros .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-nosotros .texto {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-nosotros .logo {
+    grid-column: 3/6;
+    grid-row: 4/4;
+    position: relative;
+    top: 80px;
+}
+
+.container-nosotros .logo img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.container-nosotros .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-nosotros .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+/* ---------------------------------------- */
+
+/* ------------------ MISION -------------- */
+.container-mision {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    background-color: white;
+}
+
+.container-mision .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-mision .texto {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-mision .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-mision .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+/* ---------------------------------------- */
+
+/* -------------- VISION ------------------ */
+.container-vision {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 130px);
+}
+
+.container-vision .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-vision .texto {
+    grid-column: 3/6;
+    text-align: center;
+}
+
+.container-vision .imagen {
+    grid-column: 2/5;
+    position: relative;
+    left: 10px;
+    top: 30px;
+}
+
+.container-vision .logo {
+    grid-column: 5/7;
+    grid-row: 5/6;
+    position: relative;
+    top: 80px;
+    left: 20px;
+
+}
+
+.container-vision .barra-gris {
+    grid-column: 5/6;
+    grid-row: 3/6;
+    background-color: white;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    top: 30px;
+}
+
+.container-vision .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-vision .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+
+.container-vision .imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+}
+
+.container-vision .logo img {
+    position: absolute;
+    max-width: 40%;
+}
+
+.container-vision .aguja img {
+    max-width: 100%;
+}
+
+
+
+
+/* ---------------------------------------- */
+/* ------------------------------------------------------------------ */
+
+
+/* ------------------------------- SERVICIOS ------------------------- */
+.container-services {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 100px);
+}
+
+.container-services .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-services .cirugia {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.container-services .imagenologia {
+    grid-column: 4/5;
+    text-align: center;
+}
+
+.container-services .hospital {
+    grid-column: 6/7;
+    text-align: center;
+}
+
+.container-services .dermatologia {
+    grid-column: 2/3;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.container-services .farmacia {
+    grid-column: 4/5;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.container-services .peluqueria {
+    grid-column: 6/7;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.container-services .alimentos {
+    grid-column: 2/3;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.container-services .accesorios {
+    grid-column: 4/5;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+.container-services .domicilio {
+    grid-column: 6/7;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+
+.container-services .cirugia .texto,
+.container-services .imagenologia .texto,
+.container-services .hospital .texto,
+.container-services .dermatologia .texto,
+.container-services .farmacia .texto,
+.container-services .peluqueria .texto,
+.container-services .alimentos .texto,
+.container-services .accesorios .texto,
+.container-services .domicilio .texto {
+    position: relative;
+    top: 20px;
+}
+
+.container-services .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+
+.container-services .cirugia .texto h1,
+.container-services .imagenologia .texto h1,
+.container-services .hospital .texto h1,
+.container-services .dermatologia .texto h1,
+.container-services .farmacia .texto h1,
+.container-services .peluqueria .texto h1,
+.container-services .alimentos .texto h1,
+.container-services .accesorios .texto h1,
+.container-services .domicilio .texto h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+}
+
+.container-services .cirugia .texto p,
+.container-services .imagenologia .texto p,
+.container-services .hospital .texto p,
+.container-services .dermatologia .texto p,
+.container-services .farmacia .texto p,
+.container-services .peluqueria .texto p,
+.container-services .alimentos .texto p,
+.container-services .accesorios .texto p,
+.container-services .domicilio .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+.container-services .cirugia .imagen img,
+.container-services .imagenologia .imagen img,
+.container-services .hospital .imagen img,
+.container-services .dermatologia .imagen img,
+.container-services .farmacia .imagen img,
+.container-services .peluqueria .imagen img,
+.container-services .alimentos .imagen img,
+.container-services .accesorios .imagen img,
+.container-services .domicilio .imagen img {
+    border-radius: 7px;
+
+}
+
+.container-services .cirugia .imagen img:hover,
+.container-services .imagenologia .imagen img:hover,
+.container-services .hospital .imagen img:hover,
+.container-services .dermatologia .imagen img:hover,
+.container-services .farmacia .imagen img:hover,
+.container-services .peluqueria .imagen img:hover,
+.container-services .alimentos .imagen img:hover,
+.container-services .accesorios .imagen img:hover,
+.container-services .domicilio .imagen img:hover {
+    opacity: .5;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+
+}
+/* ------------------------------------------------------------------- */
+
+/* --------------------------- PLANES ------------------------------- */
+/* ---------------- PLANES --------------- */
+.container-planes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.container-planes .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: 20px;
+}
+
+.container-planes .imagen {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container-planes .imagen .basico {
+    grid-column: 3/4;
+    position: relative;
+    top: 30px;
+}
+
+.container-planes .imagen .preferencial {
+    grid-column: 4/5;
+    position: relative;
+    top: 30px;
+}
+
+.container-planes .imagen .vip {
+    grid-column: 5/6;
+    position: relative;
+    top: 30px;
+}
+
+.container-planes .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-planes .imagen .basico img,
+.container-planes .imagen .preferencial img,
+.container-planes .imagen .vip img {
+    max-width: 100%;
+}
+/* -------------------------------------- */
+
+/* --------------- COTIZACION ----------- */
+.container-cotizacion {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    background-color: white;
+}
+
+.container-cotizacion .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-cotizacion .texto {
+    grid-column: 3/6;
+    text-align: center;
+}
+
+.container-cotizacion .boton {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-cotizacion .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-cotizacion .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+.container-cotizacion .boton a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    font-family: 'Bitter';
+    border-radius: 7px;
+}
+
+.container-cotizacion .boton a:hover {
+    color: var(--darkgray);
+    background-color: var(--white);
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: 35s ease;
+    -o-transition: .3s ease;
+}
+
+/* -------------------------------------- */
+
+/* ------------------------------------------------------------------ */
+
+/* ----------------------- CONTACTANOS ------------------------------ */
+
+/* ------------------- FORMULARIO ------------------ */
+.container-contacto {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 100px);
+}
+
+.container-contacto .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-contacto .texto {
+    grid-column: 3/6;
+    text-align: center;
+}
+
+.container-contacto .formulario {
+    grid-column: 1/-1;
+    grid-row: 3/8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.container-contacto .formulario .nombre {
+    grid-column: 3/4;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-contacto .formulario .apellido {
+    grid-column: 4/5;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-contacto .formulario .mail {
+    grid-column: 3/4;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-contacto .formulario .telefono {
+    grid-column: 4/5;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-contacto .formulario .asunto {
+    grid-column: 3/4;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-contacto .formulario .mensaje {
+    grid-column: 4/5;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-contacto .formulario .boton {
+    grid-column: 3/5;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+
+.container-contacto .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+
+.container-contacto .texto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+.container-contacto .formulario .nombre p,
+.container-contacto .formulario .apellido p,
+.container-contacto .formulario .mail p,
+.container-contacto .formulario .telefono p,
+.container-contacto .formulario .asunto p,
+.container-contacto .formulario .mensaje p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+.container-contacto .formulario .nombre input,
+.container-contacto .formulario .apellido input,
+.container-contacto .formulario .mail input,
+.container-contacto .formulario .telefono input,
+.container-contacto .formulario .asunto input,
+.container-contacto .formulario .mensaje textarea {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-contacto .formulario .boton input {
+    padding: 7px 20px;
+    color: white;
+    background-color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 20px;
+    border: .5px solid var(--blue);
+    border-radius: 7px;
+}
+
+.container-contacto .formulario .boton input:hover {
+    color: var(--darkgray);
+    background-color: var(--white);
+    border: .5px solid var(--white);
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+/* ------------------------------------------- */
+
+/* ------------- DETALLE CONTACTO ------------ */
+.detalle-contacto {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.detalle-contacto .texto {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.detalle-contacto .contacto {
+    grid-column: 3/6;
+    text-align: center;
+}
+
+.detalle-contacto .texto p,
+.detalle-contacto .contacto p {
+    color: var(--darkgray);
+    font-family: 'Bitter';
+    font-size: 20px;
+}
+
+.detalle-contacto .texto p a,
+.detalle-contacto .contacto p a {
+    color: var(--darkgray);
+    text-decoration: none;
+}
+
+.detalle-contacto .texto p a:hover,
+.detalle-contacto .contacto p a:hover {
+    color: var(--black);
+}
+
+
+.detalle-contacto .contacto p span {
+    color: var(--blue);
+}
+/* ------------------------------------------- */
+
+
+/* ------------------ SOCIAL ----------------- */
+.container-social {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2, 130px);
+}
+
+.container-social .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-social .ico-facebook {
+    grid-column: 3/4;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+
+.container-social .ico-instagram {
+    grid-column: 4/5;
+    position: relative;
+    top: 10px;
+}
+
+.container-social .ico-whatsapp {
+    grid-column: 5/6;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.container-social .ico-facebook a img,
+.container-social .ico-instagram a img,
+.container-social .ico-whatsapp a img {
+    max-width: 100%;
+}
+
+.container-social .ico-facebook a img:hover,
+.container-social .ico-instagram a img:hover,
+.container-social .ico-whatsapp a img:hover {
+    opacity: .7;
+}
+
+.container-social .titulo h1 {
+    color: var(--blue);
+    font-family: 'Bitter';
+    font-size: 40px;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------------------------------ */
