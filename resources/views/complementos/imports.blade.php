@@ -25,11 +25,12 @@
         </div>
 
         <ul class="menu" id="menu">
-            <li><a href="{{asset('/')}}" id="home"><span class="icon-inicio"></span>HOME</a></li>
-            <li><a href="{{asset('quienes_somos')}}" id="quienes_somos"><span class="icon-nosotros"></span>QUIENES SOMOS</a></li>
-            <li><a href="{{asset('nuestros_servicios')}}" id="nuestros_servicios"><span class="icon-servicios"></span>SERVICIOS</a></li>
-            <li><a href="{{asset('nuestros_planes')}}" id="nuestros_planes"><span class="icon-planes"></span>NUESTROS PLANES</a></li>
-            <li><a href="{{asset('contacto')}}" id="contacto"><span class="icon-contacto"></span>CONTACTO</a></li>
+            <li><a href="{{route('index')}}" id="home"><span class="icon-inicio"></span>HOME</a></li>
+            <li><a href="{{route('quienes_somos')}}" id="quienes_somos"><span class="icon-nosotros"></span>QUIENES SOMOS</a></li>
+            <li><a href="{{route('nuestros_servicios')}}" id="nuestros_servicios"><span class="icon-servicios"></span>SERVICIOS</a></li>
+            <li><a href="{{route('nuestros_planes')}}" id="nuestros_planes"><span class="icon-planes"></span>NUESTROS PLANES</a></li>
+            <li><a href="{{route('contacto')}}" id="contacto"><span class="icon-contacto"></span>CONTACTO</a></li>
+            <li><a href="{{route('login')}}"><span class="icon-nosotros"></span>LOGIN</a></li>
         </ul>
     </nav>
     @yield('body')

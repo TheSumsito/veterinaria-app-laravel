@@ -1080,3 +1080,69 @@ body {
 }
 /* ------------------------------------------- */
 /* ------------------------------------------------------------------ */
+
+
+.container-login {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100px auto repeat(3, 84.4px);
+}
+
+.container-login .titulo {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-login .formulario {
+    grid-column: 3/6;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-login .formulario .contrasena {
+    position: relative;
+    top: 25px;
+}
+
+.container-login .formulario .boton {
+    position: relative;
+    top: 80px;
+}
+
+.container-login .titulo h1 {
+    font-family: 'Bitter';
+    color: var(--blue);
+    font-size: 40px;
+}
+
+.container-login .formulario .usuario p,
+.container-login .formulario .contrasena p {
+    font-family: 'Bitter';
+    color: var(--darkgray);
+    font-size: 17px;
+}
+
+.container-login .formulario .usuario input,
+.container-login .formulario .contrasena input {
+    position: relative;
+    top: 10px;
+    font-family: 'Bitter';
+    text-align: center;
+    font-size: 15px;
+    padding: 2px 10px;
+    color: var(--darkgray);
+}
+
+.container-login .formulario .boton input,
+.container-login .formulario .boton a {
+    padding: 5px 10px;
+    color: white;
+    background-color: var(--blue);
+    border: .3px solid var(--blue);
+    font-family: 'Bitter';
+    font-size: 15px;
+    text-decoration: none;
+}

@@ -2,12 +2,11 @@
 @section('head')
     <title>Home - BlueVet</title>
 @endsection
-
 @section('body')
     <div class="container-carousel">
         <div class="slide01 animated fadeIn">
             <div class="imagen">
-            <img src="{{asset('img/carousel/slide01.jpg')}}" alt="">
+                <img src="{{asset('img/carousel/slide01.jpg')}}" alt="">
             </div>
             <div class="texto">
                 <h1>Clinica BlueVet</h1>

@@ -12,8 +12,29 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'daoController@home')->name('/');
-Route::get('quienes_somos', 'daoController@quienes_somos')->name('quienes_somos');
-Route::get('nuestros_servicios', 'daoController@nuestros_servicios')->name('nuestros_servicios');
-Route::get('nuestros_planes', 'daoController@nuestros_planes')->name('nuestros_planes');
-Route::get('contacto', 'daoController@contacto')->name('contacto');
+Route::get('/', function(){
+    return view('index');
+})->name('index');
+
+Route::get('/quienes_somos', function(){
+    return view('quienes_somos');
+})->name('quienes_somos');
+
+Route::get('nuestros_servicios', function(){
+    return view('nuestros_servicios');
+})->name('nuestros_servicios');
+
+Route::get('nuestros_planes', function(){
+    return view('nuestros_planes');
+})->name('nuestros_planes');
+
+Route::get('contacto', function(){
+    return view('contacto');
+})->name('contacto');
+
+Route::get('login', function(){
+    return view('login');
+})->name('login');
+
+Auth::routes();
+Route::get('/administrador/home', 'AdminController@index')->name('home');
